@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="5px">
+            <tr>
+                <td>topic_name</td>
+                <td>name</td>
+                <td>url</td>
+            </tr>
+                {% for i in LWO %}
+                    <tr>
+                        <td>{{i.topic_name}}</td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.url}}</td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>
